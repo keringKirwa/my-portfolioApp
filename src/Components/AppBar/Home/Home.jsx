@@ -11,16 +11,16 @@ export const Home = () => {
         {/* -----column------------------ */}
 
         <div className="col-12 col-sm-12 col-md-12 col-l-7 col-xl-7 d-flex flex-column align-items-center  mt-3 app-home-left position-relative mt-4 pl-5 ">
-          <div className="who-am-i text-white d-flex flex-column">
+          <div className="who-am-i text-white d-flex flex-column w-100 jsutify-content-center align-items-center">
             <span className=" display-5 m-lg-3 text-center text-secondary ">
-              <span className="hello-text"> Hello</span>? Am{' '}
+              <span className="hello-text"> Hello </span>? Am{' '}
               <span className="text-danger align-items-center display-4 italicText ">
                 Kirwa
               </span>
             </span>
 
             <h1 className="d-lg-none d-md-none d-sm-flex d-flex text-center text-dark">
-              A passionate :
+              Skilled In :
             </h1>
             <h1 className="d-lg-block d-md-block d-sm-none d-none enlightened-text">
               Enlightened By The Spirit Of Coding ...
@@ -29,20 +29,23 @@ export const Home = () => {
             <Typical
               className="typical typical-component"
               steps={[
-                'FullStack developer 💻',
+                'FullStack Dev.💻',
                 3000,
-                'Java-BackEnd ☕',
+                'Java~BackEnd Dev.☕',
                 3000,
-                'ReactJS-FrontEnd',
+                'ReactJS~FrontEnd Dev.',
                 3000,
-                'ExpressJs B.End🖱️',
+                'ExpressJs~ Dev.🖱️',
                 3000,
-                'BootstrapCss',
+                'BootstrapCss~UI Dev.',
                 3000,
               ]}
               loop={Infinity}
               wrapper="p"
             />
+            <h1 className="d-lg-none d-md-none d-sm-flex d-flex text-center text-dark">
+              Developer.
+            </h1>
           </div>
 
           <div className="buttons d-flex flex-direction-column  ">

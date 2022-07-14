@@ -31,8 +31,8 @@ export const ContactMe = () => {
               steps={[
                 'lets build sth.great,',
                 3000,
-                'Email Me and ,',
-                3000,
+                'Email Me and,',
+                1000,
                 'Get Your job done.✔️',
                 3000,
                 'lets get in touch',

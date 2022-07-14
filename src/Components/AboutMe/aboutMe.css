@@ -98,3 +98,9 @@
     justify-content: space-around !important;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .java-spring-tool {
+    margin-right: 0px solid gray !important;
+  }
+}
