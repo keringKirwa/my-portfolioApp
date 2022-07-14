@@ -20,11 +20,15 @@ export const ContactMe = () => {
         <br />
       </div>
 
-      <div className="row contact-form-container bg-dark  ">
-        <div className="col-l-5 col-xl-5 d-none d-md-none d-lg-block d-xl-block ">
-          <img src={handdShake} alt="handshake" className="handshake-image " />
+      <div className="row contact-form-container bg-dark ">
+        <div className="col-l-5 col-xl-5 d-none d-xl-block">
+          <img
+            src={handdShake}
+            alt="handshake"
+            className="d-none d-lg-flex d-xl-flex w-75 h-100 "
+          />
         </div>
-        <form className="col-12 col-sm-12 col-l-7 col-xl-7 d-flex flex-column contact-me-form">
+        <form className="col-12 col-l-7 col-xl-7 d-flex flex-column contact-me-form w-lg-75">
           <h2 className="text-capitalize text-center display-sm-5 display-5 mt-2 contact-typical-text">
             <Typical
               className="contact-me-typical-component"

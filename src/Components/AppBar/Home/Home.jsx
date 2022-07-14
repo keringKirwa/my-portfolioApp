@@ -6,7 +6,7 @@ import './home.css';
 
 export const Home = () => {
   return (
-    <div className="container-fluid pt-5 mt-5 home" id="home">
+    <div className="container-fluid pt-5 mt-5  home" id="home">
       <div className="row d-flex align-items-center justify-content-center flex-wrap-reverse">
         {/* -----column------------------ */}
 
@@ -68,7 +68,11 @@ export const Home = () => {
         </div>
       </div>
       <div className="col col-12 col-sm-12 col-md-12 col-12 d-none d-lg-flex  d-sm-flex app-footer-background ">
-        <img src={image} alt="" className="img-responsive  text-fluid" />
+        <img
+          src={image}
+          alt=""
+          className="img-responsive  text-fluid d-none d-xl-block"
+        />
       </div>
     </div>
   );
