@@ -35,7 +35,7 @@
   font-style: italic;
 }
 .enlightened-text {
-  color: black;
+  color: goldenrod;
 }
 
 .btn-get-resume-me:hover {
@@ -51,6 +51,7 @@
 }
 .typical-component {
   font-weight: 550;
+  color: goldenrod;
   font-family: 'Cormorant', serif !important;
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto', sans-serif;

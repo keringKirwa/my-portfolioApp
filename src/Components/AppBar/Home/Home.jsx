@@ -6,7 +6,7 @@ import './home.css';
 
 export const Home = () => {
   return (
-    <div className="container-fluid pt-5 mt-5 w-100 home " id="home">
+    <div className="container-fluid pt-5 mt-5 w-100 home bg-dark" id="home">
       <div className="row d-flex align-items-center justify-content-center flex-wrap-reverse">
         {/* -----column------------------ */}
 
@@ -19,7 +19,7 @@ export const Home = () => {
               </span>
             </span>
 
-            <h1 className="d-lg-none d-md-none d-sm-flex d-flex text-center text-dark">
+            <h1 className="d-lg-none d-md-none d-sm-flex d-flex text-center ">
               Skilled In :
             </h1>
             <h1 className="d-lg-block d-md-block d-sm-none d-none enlightened-text">
