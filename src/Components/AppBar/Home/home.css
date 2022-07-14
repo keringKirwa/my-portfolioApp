@@ -1,19 +1,13 @@
-.app-Home-page {
-  min-height: 50vh;
+.home {
   background-color: beige;
+  color: black;
+  max-width: 100% !important;
 }
+
 .who-am-i {
   font-family: 'Cormorant', serif;
   font-weight: 400;
   font-size: 50px;
-}
-.home {
-  background-color: beige;
-  color: black;
-}
-
-.app-home-left {
-  min-height: 420px;
 }
 
 .btn-hire-me {
@@ -87,21 +81,11 @@
   height: 90px;
   border-radius: 50px 0px 0px 0px;
 }
-@media only screen and (max-width: 1050px) {
-  .home {
-    border-radius: 20px;
-    width: 100% !important;
-    margin: 0px !important;
-  }
-}
 
 @media only screen and (max-width: 650px) {
   .image-portfolio {
     width: 200px !important;
     height: 200px !important;
-  }
-  .app-Home-page {
-    margin-bottom: 10px !important;
   }
 }
 @media only screen and (max-width: 1250px) {

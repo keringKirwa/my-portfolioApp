@@ -6,7 +6,7 @@ import { AppBar } from './Components/AppBar/AppBar';
 import { AboutMe } from './Components/AboutMe/AboutMe';
 function App() {
   return (
-    <div className="App container-fluid app-component-main-app">
+    <div>
       <AppBar />
       <Home />
       <AboutMe />

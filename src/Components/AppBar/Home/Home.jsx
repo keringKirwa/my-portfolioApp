@@ -6,7 +6,7 @@ import './home.css';
 
 export const Home = () => {
   return (
-    <div className="container-fluid pt-5 mt-5  home" id="home">
+    <div className="container-fluid pt-5 mt-5 w-100 home " id="home">
       <div className="row d-flex align-items-center justify-content-center flex-wrap-reverse">
         {/* -----column------------------ */}
 
@@ -45,7 +45,7 @@ export const Home = () => {
             />
           </div>
 
-          <div className="buttons d-flex flex-direction-column  ">
+          <div className="buttons d-flex flex-direction-column align-items-center ">
             <a href="#contact-me" role="button">
               <button class="btn btn-hire-me m-1" type="button">
                 Hire Me
