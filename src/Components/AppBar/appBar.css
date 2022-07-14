@@ -1,0 +1,42 @@
+.nav-item :focus{
+    border-bottom: 2px solid red;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.nav-item .nav-link:hover{
+    color: red;
+    background-color: rgb(89, 87, 87);
+    border-radius: 3px;
+    border-bottom: 2px solid red;
+}
+
+.AppBar{
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.nav-link{
+    font-size: 30px;
+    padding: 0px 10px;
+    font-weight:300;
+    font-family: 'Cormorant', serif;
+}
+
+@media only screen and (max-width: 1050px) {
+    .nav-link {
+        font-size: 40px;
+        font-family: 'Cormorant', serif;
+        padding: 10px;
+    }
+}
+
+.user-text{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Cormorant', serif;
+    padding: 0;
+    margin: 2px;
+}

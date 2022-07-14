@@ -1,0 +1,100 @@
+.contact-me-divider {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-me-divider .contact-me-text {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.contact-me-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form-container {
+  color: goldenrod;
+  font-family: 'Cormorant', serif;
+  font-size: 30px;
+  border-radius: 10px;
+  width: 100% !important;
+  min-height: 450px !important;
+}
+.contact-form-container .handshake-image {
+  max-width: 100%;
+}
+
+.contact-me-form {
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contact-form input {
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 50px;
+  border-radius: 10px;
+  width: 80%;
+}
+.contact-form textarea {
+  color: black;
+  width: 80%;
+  font-size: 35px;
+  border-radius: 15px;
+  font-weight: 400;
+}
+.contact-button-submit {
+  color: white;
+  border: 1px solid gold;
+}
+.contact-typical-text {
+  color: gold;
+}
+
+@media only screen and (max-width: 650px) {
+  .main-container-contact {
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-container-contact {
+    margin-top: 500px !important;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .contact-form-section {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .contact-me-form textarea {
+    margin-top: 15px;
+    height: 100px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .contact-form-section {
+    width: 70% !important;
+    height: 450px !important;
+  }
+
+  .contact-form-container {
+    height: 400px !important;
+    margin-bottom: 200px;
+    max-width: 100% !important;
+  }
+  .handshake-image {
+    height: 450px !important;
+    width: 100% !important;
+    object-fit: contain;
+    border-radius: 0px 0px 20px 20px;
+  }
+}

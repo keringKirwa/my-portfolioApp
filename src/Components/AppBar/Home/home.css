@@ -1,0 +1,130 @@
+.app-Home-page {
+  min-height: 50vh;
+  background-color: beige;
+}
+.who-am-i {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 50px;
+}
+.home {
+  background-color: beige;
+  min-height: 100vh;
+  color: black;
+}
+.app-home-left {
+  min-height: 420px;
+}
+
+.btn-hire-me {
+  color: white;
+  background-color: rgb(4, 4, 34);
+  border: 2px solid beige;
+  border-radius: 20px;
+  width: 150px;
+  border-color: aqua;
+}
+
+.btn-hire-me:hover {
+  color: antiquewhite;
+  border: 2px solid brown;
+}
+
+.btn-get-resume-me {
+  width: 150px;
+  border-radius: 20px;
+  background-color: #ff5823;
+  color: white;
+  border-color: aqua;
+}
+.italicText {
+  font-style: italic;
+}
+.enlightened-text {
+  color: black;
+}
+
+.btn-get-resume-me:hover {
+  background-color: beige;
+  border: 2px solid red;
+}
+
+.typical {
+  color: black;
+  font-family: 'Cormorant', serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+.typical-component {
+  font-weight: 550;
+  font-family: 'Cormorant', serif !important;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+.buttons {
+  gap: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  margin-top: 100px;
+}
+.home-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px solid violet;
+}
+.home-image-container .image-portfolio {
+  border-radius: 50%;
+  background-size: cover;
+  position: center;
+  margin-top: 10px;
+}
+.app-footer-background {
+  max-width: 100%;
+  height: 90px;
+  border-radius: 50px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 650px) {
+  .image-portfolio {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .app-Home-page {
+    margin-bottom: 10px !important;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .image-portfolio {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .who-am-i {
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .image-portfolio {
+    width: 400px !important;
+    height: 400px !important;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+}
