@@ -25,7 +25,7 @@ export const AboutMe = () => {
 
       <div className="row about-me-main-section flex-wrap-reverse">
         {/* -------------------------------- */}
-        <div className="col-12 col-sm-12 col-l-6 col-l-6 col-xl-6 about-me-left text-center">
+        <div className="about-me-left col-12 col-sm-12 col-l-6 col-l-6 col-xl-6  text-center">
           <div className="specialization">
             <h3 className=" intro-specialization text-capitalize">
               gaining more interest and Experiance in the following technologies{' '}

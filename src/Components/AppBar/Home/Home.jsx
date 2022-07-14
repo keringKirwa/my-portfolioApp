@@ -43,9 +43,6 @@ export const Home = () => {
               loop={Infinity}
               wrapper="p"
             />
-            <h1 className="d-lg-none d-md-none d-sm-flex d-flex text-center text-dark">
-              Developer.
-            </h1>
           </div>
 
           <div className="buttons d-flex flex-direction-column  ">

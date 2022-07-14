@@ -70,10 +70,6 @@
   align-items: center;
 }
 
-.about-me-left {
-  border-right: 1px solid gray;
-  padding: 20px;
-}
 .intro-specialization {
   font-family: 'Cormorant', serif;
   font-weight: 550;
@@ -97,10 +93,8 @@
   .java-spring-tool {
     justify-content: space-around !important;
   }
-}
-
-@media only screen and (max-width: 750px) {
-  .java-spring-tool {
-    margin-right: 0px solid gray !important;
+  .about-me-left {
+    border-right: 1px solid gray !important;
+    padding: 20px;
   }
 }
