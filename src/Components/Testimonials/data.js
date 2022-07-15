@@ -16,7 +16,7 @@ export const data = [
     occupation: 'CEO~AMACCO',
     image: ceo2,
     message:
-      'I recommend Kirwa for you. he is a decent guy ,he finished the task i gave him In time.I recommend Him for any company wishing to make change .',
+      'I recommend Kirwa for you. he is a decent guy ,he finished the task i gave him In time.I recommend Him for you.',
   },
   {
     clientName: 'Munene Emason',
@@ -37,6 +37,6 @@ export const data = [
     occupation: 'CEO~SuperWing',
     image: ceolady,
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sit quia soluta laboriosam sed maxime ullam nemo repellat sapiente, vero,',
+      'He worked on my project just like His. i love the way he delivers his final result.',
   },
 ];

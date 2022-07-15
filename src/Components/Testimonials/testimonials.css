@@ -24,13 +24,14 @@
 .clients-data {
   width: 100% !important;
   background-color: beige;
-  height: 200px;
+  min-height: 200px;
   border-radius: 40px 40px 40px 0px;
   margin: 10px !important;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  color: goldenrod;
 }
 
 .pseudoContainer {
@@ -49,6 +50,10 @@
   scrollbar-width: none;
   position: relative;
   background-color: rgb(250, 250, 248);
+  width: 100vw !important;
+}
+.done-container {
+  max-width: 100vw !important;
 }
 .app-scrollable-testimonials-container ::-webkit-scrollbar {
   display: none;
@@ -63,6 +68,8 @@
   padding-top: 10px !important;
   font-family: 'Cormorant', serif;
   font-weight: 400;
+  font-size: 20px;
+  color: white;
 }
 .clients-data .portion3 {
   display: flex;
@@ -100,14 +107,13 @@
 }
 
 .app__gallery-images_arrows {
-  width: 100%;
-  display: flex;
+  width: 100% !important;
   justify-content: space-between;
   align-items: center;
-
   padding: 0 1rem;
   position: absolute;
-  bottom: 5%;
+  bottom: 1%;
+  min-width: 100vw !important;
 }
 
 .gallery__arrow-icon {

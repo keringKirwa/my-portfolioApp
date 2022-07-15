@@ -1,10 +1,6 @@
 import React, { useRef } from 'react';
 
-import {
-  BsInstagram,
-  BsArrowLeftShort,
-  BsArrowRightShort,
-} from 'react-icons/bs';
+import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 import { data } from './data.js';
 
@@ -42,16 +38,15 @@ export const Testimonials = () => {
       </div>
       {/* -----------DONE ------------------------- */}
 
-      <div className="row w-100  d-flex justify-content-center align-items-center position-relative">
-        <div className=" w-100">
+      <div className=" d-flex w-100 justify-content-center align-items-center position-relative">
+        <div className="">
           <div
             className="pseudoContainer d-flex app-scrollable-testimonials-container w-100 "
             ref={scrollRef}
           >
             {data.map((data) => (
-              <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 clients-data ">
-                <div className="portion1 text-center">
-                  <i class="fa-solid fa-user"></i>
+              <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 clients-data text-info">
+                <div className="portion1 text-center text-dark">
                   {data.message}
                 </div>
                 <div className="portion2">⭐⭐⭐⭐⭐</div>
@@ -69,7 +64,7 @@ export const Testimonials = () => {
               </div>
             ))}
           </div>
-          <div className="app__gallery-images_arrows">
+          <div className="app__gallery-images_arrows d-flex justify-content-between ">
             <BsArrowLeftShort
               className="gallery__arrow-icon"
               onClick={() => scroll('left')}
