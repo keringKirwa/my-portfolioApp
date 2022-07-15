@@ -17,15 +17,15 @@ export const Testimonials = () => {
     const { current } = scrollRef;
 
     if (direction === 'left') {
-      current.scrollLeft -= 300;
+      current.scrollLeft -= 400;
     } else {
-      current.scrollLeft += 300;
+      current.scrollLeft += 400;
     }
   };
 
   return (
     <div
-      className="container-fluid  testimaonials-main-container"
+      className="container-fluid  app-testimaonials-clients-container"
       id="testimaonials"
     >
       <div className="row m-3 testimonials-divider">
@@ -42,24 +42,43 @@ export const Testimonials = () => {
       </div>
       {/* -----------DONE ------------------------- */}
 
-      <div className="row w-100 testimonials-main-container d-flex justify-content-center align-items-center">
-        <div
-          className="app-scrollable-testimonials-container w-100 "
-          ref={scrollRef}
-        >
-          {data.map((data) => (
-            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 clients-data">
-              <div className="portion1 text-center">{data.message}</div>
-              <div className="portion2">⭐⭐⭐⭐⭐</div>
-              <div className="portion3 d-flex">
-                <img src={data.image} alt="client-avatar" />
-                <div className="client-name-and-occupation">
-                  <h3 className="cormorant client-name">{data.clientName}</h3>
-                  <h4 className="cormorant">{data.occupation}</h4>
+      <div className="row w-100  d-flex justify-content-center align-items-center position-relative">
+        <div className=" w-100">
+          <div
+            className="pseudoContainer d-flex app-scrollable-testimonials-container w-100 "
+            ref={scrollRef}
+          >
+            {data.map((data) => (
+              <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 clients-data ">
+                <div className="portion1 text-center">
+                  <i class="fa-solid fa-user"></i>
+                  {data.message}
+                </div>
+                <div className="portion2">⭐⭐⭐⭐⭐</div>
+                <div className="portion3 d-flex">
+                  <img
+                    src={data.image}
+                    alt="client-avatar"
+                    className="ceoimage"
+                  />
+                  <div className="client-name-and-occupation">
+                    <h3 className="cormorant client-name">{data.clientName}</h3>
+                    <h4 className="cormorant">{data.occupation}</h4>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="app__gallery-images_arrows">
+            <BsArrowLeftShort
+              className="gallery__arrow-icon"
+              onClick={() => scroll('left')}
+            />
+            <BsArrowRightShort
+              className="gallery__arrow-icon "
+              onClick={() => scroll('right')}
+            />
+          </div>
         </div>
       </div>
     </div>
