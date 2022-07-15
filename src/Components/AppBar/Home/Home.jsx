@@ -51,9 +51,11 @@ export const Home = () => {
                 Hire Me
               </button>
             </a>
-            <button class="btn btn-get-resume-me m-1" type="button">
-              Get Resume
-            </button>
+            <a href="#testimaonials" role="button">
+              <button class="btn btn-get-resume-me m-1" type="button">
+                Get Resume
+              </button>
+            </a>
           </div>
         </div>
 

@@ -44,9 +44,9 @@ export const AboutMe = () => {
         {/* --------------------------------- */}
 
         <div className="col-12 col-sm-12 col-l-6 col-l-6 col-xl-6 ">
-          <h4 className="diplay-4 text-capitalize  display-4 text-center about-me-title">
+          <h4 className="diplay-4 text-capitalize  text-center about-me-title">
             {' '}
-            I have passion in{' '}
+            A Passionate{' '}
             <span className="text-dark">
               {' '}
               Full<span className="text-info-langugaes">Stack</span> Web
@@ -54,7 +54,7 @@ export const AboutMe = () => {
             </span>
           </h4>
           <p className="app-aboutMe-p display-4 text-center">
-            A developer with a solid knowledge in
+            with a solid knowledge in
             <span className="text-info-langugaes">
               {' '}
               JavaScript,Java & mySQL.
@@ -71,10 +71,11 @@ export const AboutMe = () => {
                 Hire Me
               </button>
             </a>
-
-            <button class="btn btn-get-resume-me m-1" type="button">
-              Get Resume
-            </button>
+            <a href="#last" role="button">
+              <button class="btn btn-get-resume-me m-1" type="button">
+                Get Resume
+              </button>
+            </a>
           </div>
         </div>
       </div>

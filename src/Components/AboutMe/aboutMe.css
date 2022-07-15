@@ -42,8 +42,8 @@
 }
 
 .about-me-title {
-  font-family: 'Poppins', sans-serif;
   font-family: 'Cormorant', serif;
+  font-size: 35px;
 }
 
 .app-aboutMe-p {
@@ -55,6 +55,8 @@
 .text-info-langugaes {
   color: #ff5823;
   font-weight: 400;
+  font-size: 35px;
+  font-family: 'Cormorant', serif;
 }
 
 .app-aboutme-tools {

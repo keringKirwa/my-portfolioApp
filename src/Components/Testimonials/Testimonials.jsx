@@ -1,9 +1,7 @@
 import React, { useRef } from 'react';
-
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 import { data } from './data.js';
-
 import './testimonials.css';
 
 export const Testimonials = () => {
@@ -45,7 +43,10 @@ export const Testimonials = () => {
             ref={scrollRef}
           >
             {data.map((data) => (
-              <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 clients-data text-info">
+              <div
+                className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 clients-data text-info "
+                id={data.clientName === 'iBrenda Mldred' ? 'last' : ''}
+              >
                 <div className="portion1 text-center text-dark">
                   {data.message}
                 </div>

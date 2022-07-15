@@ -23,9 +23,9 @@
 }
 .clients-data {
   width: 100% !important;
-  background-color: beige;
+  background-color: rgba(255, 166, 0, 0.062);
   min-height: 200px;
-  border-radius: 40px 40px 40px 0px;
+  border-radius: 70px 50px 50px 0px;
   margin: 10px !important;
   display: flex;
   flex-direction: column;

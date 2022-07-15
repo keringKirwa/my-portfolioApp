@@ -33,7 +33,7 @@ export const data = [
       'What i love about this man is the fact thhat He is a honest Guy that keeps his words.I give him credit.',
   },
   {
-    clientName: 'Brenda Mildred',
+    clientName: 'iBrenda Mldred',
     occupation: 'CEO~SuperWing',
     image: ceolady,
     message:
