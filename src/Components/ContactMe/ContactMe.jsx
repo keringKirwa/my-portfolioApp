@@ -10,7 +10,7 @@ export const ContactMe = () => {
       id="contact-me"
     >
       <div className="row m-3 contact-me-divider">
-        <h2 className="display-4">Contact Me </h2>
+        <h2 className="display-4 testimonials-text">Contact Me </h2>
 
         <div className="oneDiv">
           <div className="one "></div>
@@ -48,11 +48,12 @@ export const ContactMe = () => {
           </h2>
           <input
             type="text"
-            class="form-control "
+            class="form-control"
             placeholder="Username"
-            aria-describedby="inputGroupPrepend3"
+            id="fName"
             required
           ></input>
+
           <input
             type="email"
             required

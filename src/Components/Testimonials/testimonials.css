@@ -1,0 +1,107 @@
+.testimonials-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-text {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.what-my-clients-say {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.clients-data {
+  width: 100% !important;
+  background-color: beige;
+  height: 200px;
+  border-radius: 40px 40px 40px 0px;
+  margin: 10px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app-scrollable-testimonials-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.app-scrollable-testimonials-container ::-webkit-scrollbar {
+  display: none;
+}
+
+.clients-data .portion1 {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90% !important;
+  padding-top: 10px !important;
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+}
+.clients-data .portion3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100% !important;
+  justify-content: space-around !important;
+}
+.client-name {
+  font-style: italic;
+}
+.clients-data .portion3 img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50% !important;
+}
+.client-name-and-occupation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.app-testimonials-container {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.app-testimonial-slide-container::-webkit-scrollbar {
+  display: none;
+}
+
+.app__gallery-images_arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 1rem;
+  position: absolute;
+  bottom: 5%;
+}
+
+.gallery__arrow-icon {
+  color: black;
+  font-size: 2rem;
+  cursor: pointer;
+  background: var(--color-black);
+  border-radius: 5px;
+}
+
+.gallery__arrow-icon:hover {
+  color: var(--color-white);
+}

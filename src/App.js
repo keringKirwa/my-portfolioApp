@@ -4,13 +4,14 @@ import './app.css';
 
 import { AppBar } from './Components/AppBar/AppBar';
 import { AboutMe } from './Components/AboutMe/AboutMe';
+import { Testimonials } from './Components/Testimonials/Testimonials';
 function App() {
   return (
     <div>
       <AppBar />
       <Home />
       <AboutMe />
-
+      <Testimonials />
       <ContactMe />
     </div>
   );

@@ -35,8 +35,8 @@ export const AppBar = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">
-                Testimonial
+              <a class="nav-link text-primary" href="#testimaonials">
+                Testimonials
               </a>
             </li>
             <li class="nav-item">
