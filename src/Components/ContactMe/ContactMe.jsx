@@ -1,14 +1,10 @@
 import React from 'react';
 import './contactme.css';
 import Typical from 'react-typical';
-import handdShake from '../../images/kirwa_files/handShake.webp';
 
 export const ContactMe = () => {
   return (
-    <div
-      className="container-fluid  contact-me-main-container "
-      id="contact-me"
-    >
+    <div className="CON-CON" id="contact-me">
       <div className="row m-3 contact-me-divider">
         <h2 className="display-4 testimonials-text">Contact Me </h2>
 
@@ -20,60 +16,60 @@ export const ContactMe = () => {
         <br />
       </div>
 
-      <div className="row contact-form-container bg-dark ">
-        <div className="col-l-5 col-xl-5 d-none d-xl-block">
-          <img
-            src={handdShake}
-            alt="handshake"
-            className="d-none d-lg-flex d-xl-flex w-75 h-100 "
-          />
-        </div>
-        <form className="col-12 col-l-7 col-xl-7 d-flex flex-column contact-me-form w-lg-75">
-          <h2 className="text-capitalize text-center display-sm-5 display-5 mt-2 contact-typical-text">
-            <Typical
-              className="contact-me-typical-component"
-              steps={[
-                'lets build sth.great,',
-                3000,
-                'Email Me and,',
-                1000,
-                'Get Your job done.✔️',
-                3000,
-                'lets get in touch',
-                3000,
-              ]}
-              loop={Infinity}
-              wrapper="p"
-            />
+      <div className="row app-main-contact-container bg-dark flex-wrap-reverse">
+        <div className="col-12 col-l-5 col-xl-5 left-content">
+          <h2 className="you-can-also cormorant text-center">
+            You can also reach me via:
           </h2>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Username"
-            id="fName"
-            required
-          ></input>
+          <h3 className="cormorant text-info">email: kkirwa230@gmail.com</h3>
+          <h3 className="cormorant text-info">📞+254793003495</h3>
+        </div>
+        <div className="col col-12 col-l-7 col-xl-7 d-flex contact-me-form-container">
+          <div className="d-flex flex-column controls-container">
+            <h2 className="text-capitalize text-center display-sm-5 display-5 mt-2 contact-typical-text">
+              <Typical
+                className="contact-me-typical-component cormorant"
+                steps={[
+                  'lets build sth.great,',
+                  3000,
+                  'Email Me and,',
+                  1000,
+                  'Get Your job done.✔️',
+                  3000,
+                  'lets get in touch',
+                  3000,
+                ]}
+                loop={Infinity}
+                wrapper="p"
+              />
+            </h2>
+            <input
+              className="username-input text-primary cormorant"
+              type="text"
+              placeholder="Username"
+              id="fName"
+              required
+            ></input>
 
-          <input
-            type="email"
-            required
-            class="form-control "
-            id="validationServerUsername"
-            placeholder="Email Address"
-            aria-describedby="inputGroupPrepend3"
-          ></input>
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
-          <button
-            class="btn btn-hire-me m-1  contact-button-submit"
-            type="submit"
-          >
-            SUBMIT
-          </button>
-        </form>
+            <input
+              type="email"
+              required
+              className="email-input text-primary cormorant"
+              placeholder="Email Address"
+            ></input>
+            <textarea
+              className="message-input cormorant "
+              rows="3"
+              placeholder="Enter Your Message Here ..."
+            ></textarea>
+            <button
+              class="btn btn-hire-me m-1  contact-button-submit"
+              type="submit"
+            >
+              SUBMIT
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
