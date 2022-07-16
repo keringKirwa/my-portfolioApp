@@ -14,7 +14,7 @@ export const Home = () => {
           <div className="who-am-i text-white d-flex flex-column w-100 jsutify-content-center align-items-center">
             <span className=" display-5 m-lg-3 text-center text-secondary ">
               <span className="hello-text"> Hello </span>? Am{' '}
-              <span className="text-danger align-items-center display-4 italicText ">
+              <span className="align-items-center display-4 italicText ">
                 Kirwa
               </span>
             </span>
@@ -52,7 +52,7 @@ export const Home = () => {
               </button>
             </a>
             <a href="#testimaonials" role="button">
-              <button class="btn btn-get-resume-me m-1" type="button">
+              <button class="btn btn-hire-me m-1" type="button">
                 Get Resume
               </button>
             </a>

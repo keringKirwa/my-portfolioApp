@@ -44,7 +44,7 @@ export const ContactMe = () => {
               />
             </h2>
             <input
-              className="username-input text-primary cormorant"
+              className="username-input text-info cormorant"
               type="text"
               placeholder="Username"
               id="fName"
@@ -54,7 +54,7 @@ export const ContactMe = () => {
             <input
               type="email"
               required
-              className="email-input text-primary cormorant"
+              className="email-input text-info cormorant"
               placeholder="Email Address"
             ></input>
             <textarea

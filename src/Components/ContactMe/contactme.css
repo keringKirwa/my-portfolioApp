@@ -5,6 +5,7 @@
 .CON-CON {
   width: 100% !important;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 .contact-me-divider {
   display: flex;

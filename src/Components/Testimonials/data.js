@@ -16,27 +16,27 @@ export const data = [
     occupation: 'CEO~AMACCO',
     image: ceo2,
     message:
-      'I recommend Kirwa for you. he is a decent guy ,he finished the task i gave him In time.I recommend Him for you.',
+      'He is a decent guy ,he finished the task i gave him In time.I recommend Him for you.',
   },
   {
     clientName: 'Munene Emason',
     occupation: 'CEO~Safaricom',
     image: ceo4,
     message:
-      'I patronized Kirwa, and when he delivered , i fell in love with the project',
+      'I patronized Kirwa, and when he delivered ,I honestly fell in love with the project.',
   },
   {
     clientName: 'Willy Mwaura',
     occupation: 'CEO~Skyline',
     image: ceo5,
     message:
-      'What i love about this man is the fact thhat He is a honest Guy that keeps his words.I give him credit.',
+      'What i love about this gentleMan is the fact that He is an honest Guy.And Yes,He keeps his words.I give him credit.',
   },
   {
-    clientName: 'iBrenda Mldred',
+    clientName: 'Mldred Omanga',
     occupation: 'CEO~SuperWing',
     image: ceolady,
     message:
-      'He worked on my project just like His. i love the way he delivers his final result.',
+      'An Expert in Bootstrap CSS indeed.The final project He Delivered was incredibly awesome. ',
   },
 ];
