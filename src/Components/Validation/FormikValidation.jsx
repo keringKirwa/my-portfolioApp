@@ -17,7 +17,7 @@ export const UserContactMeForm = () => {
         validationSchema={SignUpSchema}
         onSubmit={(values, { resetForm }) => {
           console.log(values);
-          toast.success('Success .Thanks For Contacing Kirwa 🙏!');
+          toast.success('Success.Thanks For Contacting Kirwa!');
           resetForm();
         }}
       >
