@@ -3,15 +3,7 @@ import './contactme.css';
 import Typical from 'react-typical';
 import { UserContactMeForm } from '../Validation/FormikValidation';
 
-const initialStateData = {
-  email: '',
-  userName: '',
-  message: '',
-};
-
 export const ContactMe = () => {
-  const [userEntries, setUserEntries] = useState(initialStateData);
-
   return (
     <div className="CON-CON " id="contact-me">
       <div className="row m-3 contact-me-divider">

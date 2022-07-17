@@ -3,32 +3,27 @@ import { Formik, Form, Field } from 'formik';
 
 import './formik.css';
 import { SignUpSchema } from './Yup.js';
-import toUpper from '../../../node_modules/lodash-es/toUpper';
+import toast from 'react-hot-toast';
 
 export const UserContactMeForm = () => {
-  const handleSubmit = (userEntries) => {
-    console.log(userEntries);
-  };
-
   return (
     <div className="w-100">
       <Formik
-        validateOnChange
         initialValues={{
           userName: '',
           email: '',
           message: '',
         }}
         validationSchema={SignUpSchema}
-        onSubmit={(values) => {
-          handleSubmit(values);
-          console.log('data submitted successfully . congratulatiosn !!');
+        onSubmit={(values, { resetForm }) => {
+          console.log(values);
+          toast.success('Success .Thanks For Contacing Kirwa 🙏!');
+          resetForm();
         }}
       >
-        {({ errors, touched, dirty, isValid }) => (
+        {({ errors, touched, dirty, isValid, resetForm }) => (
           <Form className="formikForm form-with-input-data" autoComplete="off">
             <Field
-              validateOnChange
               name="userName"
               id={touched.userName && !errors.userName ? 'success' : ''}
               as="input"
@@ -43,7 +38,6 @@ export const UserContactMeForm = () => {
             )}
 
             <Field
-              validateOnChange
               name="email"
               placeholder="Email Address"
               as="input"
@@ -59,7 +53,6 @@ export const UserContactMeForm = () => {
             )}
 
             <Field
-              validateOnChange
               name="message"
               id={touched.message && !errors.message ? 'success' : ''}
               as="textarea"
