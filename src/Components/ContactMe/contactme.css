@@ -29,15 +29,18 @@
   display: flex;
   flex-direction: column;
   height: 100% !important;
-  color: goldenrod;
+  color: whitesmoke;
 }
 .contact-me-form-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100% !important;
-  color: goldenrod;
+  color: white;
   padding-bottom: 30px;
+}
+.contact-typical-text {
+  color: white;
 }
 
 .controls-container {
@@ -48,24 +51,29 @@
   gap: 10px;
 }
 .controls-container .email-input {
+  all: initial;
   background-color: inherit;
   border: 1px solid white;
   color: white;
   height: 40px;
+
+  font-family: 'Cormorant', serif;
 }
 .controls-container .username-input {
+  all: initial;
   background-color: inherit;
   border: 1px solid white;
-  color: aliceblue;
   height: 40px;
   color: white;
+
+  font-family: 'Cormorant', serif;
 }
-.controls-container .message-input {
+.message-input {
+  all: initial;
   background-color: inherit;
   border: 1px solid white;
-  color: aliceblue;
+  font-family: 'Cormorant', serif;
   height: 100px;
-  color: white;
 }
 
 @media only screen and (max-width: 650px) {
@@ -99,7 +107,7 @@
   .controls-container .message-input {
     width: 60% !important;
     border-radius: 7px;
-    font-size: 30px;
+    font-size: 27px;
   }
 
   .fa-copyright-text {

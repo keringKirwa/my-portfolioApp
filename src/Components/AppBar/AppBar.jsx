@@ -4,10 +4,10 @@ import './appBar.css';
 export const AppBar = () => {
   return (
     <div className="AppBar">
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark main__app__Bar ">
         <h3 className="text-danger user-text">ArapKirwa.</h3>
         <button
-          class="navbar-toggler text-danger"
+          class="navbar-toggler "
           type="button"
           data-toggle="collapse"
           data-target="#collapsibleNavbar"
@@ -19,12 +19,20 @@ export const AppBar = () => {
           id="collapsibleNavbar"
         >
           <ul class="navbar-nav justify-content-center">
-            <li class="nav-item">
+            <li
+              class="nav-item text-primary"
+              data-toggle="collapse"
+              data-target="#collapsibleNavbar"
+            >
               <a class="nav-link text-primary" href="#">
                 Home
               </a>
             </li>
-            <li class="nav-item">
+            <li
+              class="nav-item  link-item"
+              data-toggle=""
+              data-target="#collapsibleNavbar"
+            >
               <a class="nav-link text-primary" href="#about-me">
                 AboutMe
               </a>

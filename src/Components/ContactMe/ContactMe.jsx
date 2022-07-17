@@ -19,7 +19,7 @@ export const ContactMe = () => {
 
       <div className="row app-main-contact-container bg-dark flex-wrap-reverse">
         <div className="col-12 col-l-5 col-xl-5 left-content">
-          <h2 className="you-can-also cormorant text-center">
+          <h2 className="you-can-also cormorant text-center ">
             You can also reach me via:
           </h2>
           <h3 className="cormorant text-info">email: kkirwa230@gmail.com</h3>
@@ -29,7 +29,7 @@ export const ContactMe = () => {
           <div className="d-flex flex-column controls-container">
             <h2 className="text-capitalize text-center display-sm-5 display-5 mt-2 contact-typical-text">
               <Typical
-                className="contact-me-typical-component cormorant"
+                className="cormorant"
                 steps={[
                   'lets build sth.great,',
                   3000,
@@ -44,7 +44,7 @@ export const ContactMe = () => {
                 wrapper="p"
               />
             </h2>
-            <UserContactMeForm className="bg-primary " />
+            <UserContactMeForm />
           </div>
         </div>
       </div>

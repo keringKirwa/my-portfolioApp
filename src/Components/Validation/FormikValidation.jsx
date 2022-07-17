@@ -26,6 +26,7 @@ export const UserContactMeForm = () => {
             <Field
               name="userName"
               id={touched.userName && !errors.userName ? 'success' : ''}
+              placeholder="username..."
               as="input"
               className={
                 errors.userName && touched.userName

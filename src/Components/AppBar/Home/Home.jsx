@@ -45,7 +45,7 @@ export const Home = () => {
             />
           </div>
 
-          <div className="buttons d-flex flex-direction-column align-items-center ">
+          <div className="buttons d-flex flex-direction-column align-items-center w-100 ">
             <a href="#contact-me" role="button">
               <button class="btn btn-hire-me m-1" type="button">
                 Hire Me

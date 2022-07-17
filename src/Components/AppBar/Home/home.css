@@ -56,7 +56,10 @@
   justify-content: space-around;
   align-items: center;
   min-width: 100%;
-  margin-top: 100px;
+  margin: auto;
+}
+#home {
+  margin: auto;
 }
 .home-image-container {
   display: flex;
