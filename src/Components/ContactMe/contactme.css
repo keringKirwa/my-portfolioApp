@@ -49,8 +49,9 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: white;
 }
-.controls-container .email-input {
+.email-input {
   all: initial;
   background-color: inherit;
   border: 1px solid white;
@@ -68,10 +69,11 @@
 
   font-family: 'Cormorant', serif;
 }
-.message-input {
+.controls-container .message-input {
   all: initial;
   background-color: inherit;
   border: 1px solid white;
+  color: whitesmoke;
   font-family: 'Cormorant', serif;
   height: 100px;
 }
