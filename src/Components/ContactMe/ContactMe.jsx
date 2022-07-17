@@ -49,7 +49,7 @@ export const ContactMe = () => {
         </div>
       </div>
       {/* ---- */}
-      <p className="text-center w-100 text-primary mt-1 display-5 cormorant fa-copyright">
+      <p className="text-center w-100 text-info  display-5 cormorant fa-copyright-text bg-dark m-0">
         Created by Kering~Kirwa. © 2020
       </p>
     </div>

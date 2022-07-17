@@ -21,7 +21,6 @@
   width: 100% !important;
   min-width: 100% !important;
   margin: auto;
-  border-radius: 0px 0px 20px 20px;
 }
 
 .left-content {
@@ -38,6 +37,7 @@
   align-items: center;
   width: 100% !important;
   color: goldenrod;
+  padding-bottom: 30px;
 }
 
 .controls-container {
@@ -101,7 +101,13 @@
     border-radius: 7px;
     font-size: 30px;
   }
-  .app-main-contact-container {
-    border-radius: 0px 0px 5px 5px;
+
+  .fa-copyright-text {
+    margin-top: 0 !important;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top: 1px solid rgb(41, 38, 38);
   }
 }
