@@ -7,7 +7,7 @@ import { AboutMe } from './Components/AboutMe/AboutMe';
 import { Testimonials } from './Components/Testimonials/Testimonials';
 function App() {
   return (
-    <div>
+    <div className="MAIN-DIV-SUPER-CONTAINER">
       <AppBar />
       <Home />
       <AboutMe />

@@ -70,11 +70,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="col col-12 col-sm-12 col-md-12 col-12 d-none d-lg-flex  d-sm-flex app-footer-background ">
-        <img
-          src={image}
-          alt=""
-          className="img-responsive  text-fluid d-none d-xl-block"
-        />
+        <img src={image} alt="" className="img-responsive t d-none d-xl-flex" />
       </div>
     </div>
   );

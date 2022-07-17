@@ -127,6 +127,10 @@
   color: red;
   transition: 0.3s ease-in-out;
 }
+.fa-copyright {
+  font-size: 20px;
+  margin-top: 10px !important;
+}
 
 @media only screen and (max-width: 650px) {
   .gallery__arrow-icon {
@@ -138,5 +142,10 @@
   }
   .clients-data {
     box-shadow: 1px 1px 30px rgb(245, 245, 237);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .clients-data {
+    height: 300px;
   }
 }

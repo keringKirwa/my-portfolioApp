@@ -20,6 +20,7 @@
   width: 100% !important;
   min-width: 100% !important;
   margin: auto;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .left-content {
@@ -97,5 +98,8 @@
     width: 60% !important;
     border-radius: 7px;
     font-size: 30px;
+  }
+  .app-main-contact-container {
+    border-radius: 0px 0px 5px 5px;
   }
 }

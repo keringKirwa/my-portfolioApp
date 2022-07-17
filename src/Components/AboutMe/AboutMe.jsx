@@ -72,7 +72,7 @@ export const AboutMe = () => {
               </button>
             </a>
             <a href="#last" role="button">
-              <button class="btn btn-get-resume-me m-1" type="button">
+              <button class="btn btn-hire-me m-1" type="button">
                 Get Resume
               </button>
             </a>

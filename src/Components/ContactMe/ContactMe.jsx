@@ -1,8 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contactme.css';
 import Typical from 'react-typical';
 
+const initialStateData = {
+  email: '',
+  userName: '',
+  message: '',
+};
+
 export const ContactMe = () => {
+  const [userEntries, setUserEntries] = useState(initialStateData);
+
+  const handleChange = (e) => {
+    setUserEntries({ ...userEntries, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = () => {
+    /* TODO: VALIDATE USER DETAILS */
+
+    console.log(userEntries);
+    setUserEntries((prevUserEntries) => ({
+      ...prevUserEntries,
+      ...initialStateData,
+    }));
+    console.log(userEntries);
+  };
+
   return (
     <div className="CON-CON" id="contact-me">
       <div className="row m-3 contact-me-divider">
@@ -48,29 +71,43 @@ export const ContactMe = () => {
               type="text"
               placeholder="Username"
               id="fName"
+              name="userName"
               required
+              onChange={handleChange}
+              defaultValue={initialStateData.userName}
             ></input>
 
             <input
               type="email"
+              name="email"
               required
               className="email-input text-info cormorant"
               placeholder="Email Address"
+              onChange={handleChange}
+              defaultValue={initialStateData.email}
             ></input>
             <textarea
               className="message-input cormorant "
+              name="message"
               rows="3"
               placeholder="Enter Your Message Here ..."
+              onChange={handleChange}
+              defaultValue={initialStateData.message}
             ></textarea>
             <button
               class="btn btn-hire-me m-1  contact-button-submit"
-              type="submit"
+              type="button"
+              onClick={handleSubmit}
             >
               SUBMIT
             </button>
           </div>
         </div>
       </div>
+      {/* ---- */}
+      <p className="text-center w-100 text-primary mt-1 display-5 cormorant fa-copyright">
+        Created by Kering~Kirwa. © 2020
+      </p>
     </div>
   );
 };

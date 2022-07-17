@@ -1,0 +1,12 @@
+.MAIN-DIV-SUPER-CONTAINER {
+  gap: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .MAIN-DIV-SUPER-CONTAINER {
+    gap: 100px !important;
+  }
+}
