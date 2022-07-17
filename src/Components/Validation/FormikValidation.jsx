@@ -3,6 +3,7 @@ import { Formik, Form, Field } from 'formik';
 
 import './formik.css';
 import { SignUpSchema } from './Yup.js';
+import toUpper from '../../../node_modules/lodash-es/toUpper';
 
 export const UserContactMeForm = () => {
   const handleSubmit = (userEntries) => {
@@ -12,6 +13,7 @@ export const UserContactMeForm = () => {
   return (
     <div className="w-100">
       <Formik
+        validateOnChange
         initialValues={{
           userName: '',
           email: '',
@@ -26,24 +28,28 @@ export const UserContactMeForm = () => {
         {({ errors, touched, dirty, isValid }) => (
           <Form className="formikForm form-with-input-data" autoComplete="off">
             <Field
+              validateOnChange
               name="userName"
+              id={touched.userName && !errors.userName ? 'success' : ''}
+              as="input"
               className={
-                errors.userName
+                errors.userName && touched.userName
                   ? 'input-error username-input text-danger cormorant'
                   : 'username-input cormorant'
               }
-              as="input"
             />
             {touched.userName && errors.userName && (
               <div className="text-danger">{errors.userName}</div>
             )}
 
             <Field
+              validateOnChange
               name="email"
               placeholder="Email Address"
               as="input"
+              id={touched.email && !errors.email ? 'success' : ''}
               className={
-                errors.email
+                touched.email && errors.email
                   ? 'input-error email-input text-danger cormorant'
                   : 'email-input  cormorant'
               }
@@ -53,11 +59,13 @@ export const UserContactMeForm = () => {
             )}
 
             <Field
+              validateOnChange
               name="message"
+              id={touched.message && !errors.message ? 'success' : ''}
               as="textarea"
               placeholder="Enter Your Message Here..."
               className={
-                errors.message
+                errors.message && touched.message
                   ? 'input-error message-input text-danger cormorant'
                   : 'message-input cormorant'
               }

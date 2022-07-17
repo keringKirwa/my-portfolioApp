@@ -5,7 +5,11 @@
   align-items: center;
 }
 .form-with-input-data {
-  margin: 10px !important;
+  gap: 10px !important;
+}
+
+#success {
+  color: green;
 }
 
 .input-error {

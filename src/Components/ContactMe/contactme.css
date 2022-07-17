@@ -49,20 +49,20 @@
 }
 .controls-container .email-input {
   background-color: inherit;
-  border: 1px solid goldenrod;
+  border: 1px solid white;
   color: white;
   height: 40px;
 }
 .controls-container .username-input {
   background-color: inherit;
-  border: 1px solid goldenrod;
+  border: 1px solid white;
   color: aliceblue;
   height: 40px;
   color: white;
 }
 .controls-container .message-input {
   background-color: inherit;
-  border: 1px solid goldenrod;
+  border: 1px solid white;
   color: aliceblue;
   height: 100px;
   color: white;

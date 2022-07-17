@@ -11,7 +11,7 @@ export const SignUpSchema = Yup.object().shape({
     .required('Email is required !'),
 
   message: Yup.string()
-    .min(10, 'message too short')
+    .min(20, 'message too short')
     .max(100, 'Message too long')
     .required('message required !'),
 });
