@@ -46,11 +46,11 @@ export const AboutMe = () => {
         <div className="col-12 col-sm-12 col-l-6 col-l-6 col-xl-6 ">
           <h4 className="diplay-4 text-capitalize  text-center about-me-title">
             {' '}
-            A Passionate{' '}
+            Am a Passionate{' '}
             <span className="text-dark">
               {' '}
               Full<span className="text-info-langugaes">Stack</span> Web
-              Development.
+              Developer,
             </span>
           </h4>
           <p className="app-aboutMe-p display-4 text-center">
@@ -66,12 +66,12 @@ export const AboutMe = () => {
             organization.
           </p>
           <div className="buttons d-flex flex-direction-column  ">
-            <a href="#contact-me" role="button">
+            <a href="#contact-me">
               <button class="btn btn-hire-me m-1" type="button">
                 Hire Me
               </button>
             </a>
-            <a href="#last" role="button">
+            <a href="#last">
               <button class="btn btn-hire-me m-1" type="button">
                 Get Resume
               </button>

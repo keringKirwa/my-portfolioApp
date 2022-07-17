@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './contactme.css';
 import Typical from 'react-typical';
+import { UserContactMeForm } from '../Validation/FormikValidation';
 
 const initialStateData = {
   email: '',
@@ -11,23 +12,8 @@ const initialStateData = {
 export const ContactMe = () => {
   const [userEntries, setUserEntries] = useState(initialStateData);
 
-  const handleChange = (e) => {
-    setUserEntries({ ...userEntries, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = () => {
-    /* TODO: VALIDATE USER DETAILS */
-
-    console.log(userEntries);
-    setUserEntries((prevUserEntries) => ({
-      ...prevUserEntries,
-      ...initialStateData,
-    }));
-    console.log(userEntries);
-  };
-
   return (
-    <div className="CON-CON" id="contact-me">
+    <div className="CON-CON " id="contact-me">
       <div className="row m-3 contact-me-divider">
         <h2 className="display-4 testimonials-text">Contact Me </h2>
 
@@ -66,41 +52,7 @@ export const ContactMe = () => {
                 wrapper="p"
               />
             </h2>
-            <input
-              className="username-input text-info cormorant"
-              type="text"
-              placeholder="Username"
-              id="fName"
-              name="userName"
-              required
-              onChange={handleChange}
-              defaultValue={initialStateData.userName}
-            ></input>
-
-            <input
-              type="email"
-              name="email"
-              required
-              className="email-input text-info cormorant"
-              placeholder="Email Address"
-              onChange={handleChange}
-              defaultValue={initialStateData.email}
-            ></input>
-            <textarea
-              className="message-input cormorant "
-              name="message"
-              rows="3"
-              placeholder="Enter Your Message Here ..."
-              onChange={handleChange}
-              defaultValue={initialStateData.message}
-            ></textarea>
-            <button
-              class="btn btn-hire-me m-1  contact-button-submit"
-              type="button"
-              onClick={handleSubmit}
-            >
-              SUBMIT
-            </button>
+            <UserContactMeForm className="bg-primary " />
           </div>
         </div>
       </div>

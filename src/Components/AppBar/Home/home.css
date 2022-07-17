@@ -13,24 +13,18 @@
 .btn-hire-me {
   color: white;
   background-color: rgb(4, 4, 34);
-  border: 2px solid beige;
+  border: 1px solid beige;
   border-radius: 20px;
   width: 150px;
   border-color: aqua;
+  transition: all 0.3s;
 }
 
 .btn-hire-me:hover {
   color: antiquewhite;
-  border: 2px solid brown;
+  border: 1px solid brown;
 }
 
-.btn-get-resume-me {
-  width: 150px;
-  border-radius: 20px;
-  background-color: #ff5823;
-  color: white;
-  border-color: aqua;
-}
 .italicText {
   font-style: italic;
 }

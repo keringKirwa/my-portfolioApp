@@ -1,6 +1,7 @@
 .app-contact-me-main-container {
   display: flex;
   flex-direction: column;
+  height: 100vh !important;
 }
 .CON-CON {
   width: 100% !important;
@@ -49,7 +50,7 @@
 .controls-container .email-input {
   background-color: inherit;
   border: 1px solid goldenrod;
-  color: aliceblue;
+  color: white;
   height: 40px;
 }
 .controls-container .username-input {
@@ -57,13 +58,14 @@
   border: 1px solid goldenrod;
   color: aliceblue;
   height: 40px;
+  color: white;
 }
 .controls-container .message-input {
   background-color: inherit;
   border: 1px solid goldenrod;
   color: aliceblue;
   height: 100px;
-  color: gold;
+  color: white;
 }
 
 @media only screen and (max-width: 650px) {

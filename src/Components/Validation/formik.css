@@ -1,0 +1,29 @@
+.formikForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-with-input-data {
+  margin: 10px !important;
+}
+
+.input-error {
+  border: 1px solid red !important;
+}
+.disbaled-button {
+  color: black;
+  border-radius: 10px;
+  width: 150px;
+  height: 35px;
+  margin: 10px;
+  border-color: antiquewhite;
+}
+.app__contact-button-submit {
+  color: blue;
+  width: 150px;
+  height: 35px;
+  margin: 10px;
+  color: white;
+  border-radius: 10px;
+}

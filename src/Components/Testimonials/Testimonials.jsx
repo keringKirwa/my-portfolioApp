@@ -37,7 +37,7 @@ export const Testimonials = () => {
       {/* -----------DONE ------------------------- */}
 
       <div className=" d-flex w-100 justify-content-center align-items-center position-relative">
-        <div className="">
+        <div className="d-flex justify-content-center position-relative">
           <div
             className="pseudoContainer d-flex app-scrollable-testimonials-container w-100 "
             ref={scrollRef}
@@ -45,7 +45,7 @@ export const Testimonials = () => {
             {data.map((data) => (
               <div
                 className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 clients-data text-info "
-                id={data.clientName === 'iBrenda Mldred' ? 'last' : ''}
+                id={data.clientName === 'Mldred Omanga' ? 'last' : ''}
               >
                 <div className="portion1 text-center text-dark">
                   {data.message}
