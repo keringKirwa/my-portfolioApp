@@ -1,3 +1,4 @@
+import React from 'react';
 import { ContactMe } from './Components/ContactMe/ContactMe';
 import { Home } from './Components/AppBar/Home/Home';
 import './app.css';

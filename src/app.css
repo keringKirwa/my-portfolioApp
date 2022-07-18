@@ -5,8 +5,23 @@
   align-items: center;
 }
 
+.main-secondary-ul {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media only screen and (max-width: 650px) {
   .MAIN-DIV-SUPER-CONTAINER {
     gap: 100px !important;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .main__app__Bar {
+    height: 60px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

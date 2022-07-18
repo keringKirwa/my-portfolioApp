@@ -5,6 +5,7 @@ import { FaTelegramPlane } from 'react-icons/fa';
 import './formik.css';
 import { SignUpSchema } from './Yup.js';
 import toast from 'react-hot-toast';
+
 import { sendEmail } from '../ContactMe/EmailSEnder';
 
 export const UserContactMeForm = () => {
@@ -18,6 +19,7 @@ export const UserContactMeForm = () => {
         }}
         validationSchema={SignUpSchema}
         onSubmit={(values, { resetForm }) => {
+          toast.loading();
           sendEmail(values, resetForm);
         }}
       >

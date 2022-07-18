@@ -12,12 +12,13 @@ export const sendEmail = (messageObject, clearForm) => {
     )
     .then(
       (result) => {
-        console.log(result);
+        toast.remove();
         toast.success('Success.Thanks For contacting Kirwa.');
         clearForm();
       },
       (error) => {
         console.log(error.text);
+        toast.remove();
         toast.error('An Error occured in sending Email.');
         clearForm();
       }
