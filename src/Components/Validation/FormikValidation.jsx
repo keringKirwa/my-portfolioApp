@@ -19,7 +19,7 @@ export const UserContactMeForm = () => {
         }}
         validationSchema={SignUpSchema}
         onSubmit={(values, { resetForm }) => {
-          toast.loading();
+          toast.loading('Sending.please wait');
           sendEmail(values, resetForm);
         }}
       >

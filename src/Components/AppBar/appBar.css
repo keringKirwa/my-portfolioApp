@@ -5,7 +5,7 @@
 }
 
 .nav-item .nav-link:hover {
-  color: red !;
+  color: red !important;
   background-color: rgb(89, 87, 87);
   border-radius: 3px;
   border-bottom: 2px solid red;

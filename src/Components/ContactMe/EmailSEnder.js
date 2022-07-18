@@ -13,14 +13,18 @@ export const sendEmail = (messageObject, clearForm) => {
     .then(
       (result) => {
         toast.remove();
-        toast.success('Success.Thanks For contacting Kirwa.');
+        toast.success('Success.Thanks For contacting Kirwa.', {
+          duration: 5000,
+        });
         clearForm();
       },
       (error) => {
-        console.log(error.text);
         toast.remove();
-        toast.error('An Error occured in sending Email.');
-        clearForm();
+        toast.error(
+          'Oops!It seems Something went wrong.PLease check your internet connection.Thank You',
+          { duration: 5000 }
+        );
+        return;
       }
     );
 };

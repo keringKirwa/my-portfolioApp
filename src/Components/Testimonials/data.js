@@ -29,8 +29,7 @@ export const data = [
     clientName: 'Willy Mwaura',
     occupation: 'CEO~Skyline',
     image: ceo5,
-    message:
-      'What i love about this gentleMan is the fact that He is an honest Guy.And Yes,He keeps his words.I give him credit.',
+    message: 'Quite Quick in work.A super cool project he built me ✔️.',
   },
   {
     clientName: 'Mldred Omanga',

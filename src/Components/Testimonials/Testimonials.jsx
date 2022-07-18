@@ -51,7 +51,7 @@ export const Testimonials = () => {
                 <div className="portion1 text-center text-dark">
                   <FaQuoteLeft className="text-secondary fa-qleft-icon" />
                   {data.message}
-                  <FaQuoteRight className="fa-right-icon text-secondary" />
+                  <FaQuoteRight className="fa-right-icon text-secondary m3 d-sm-none d-none d-lg-block d-md-block d-xl-block" />
                 </div>
                 <div className="portion2">⭐⭐⭐⭐⭐</div>
                 <div className="portion3 d-flex">

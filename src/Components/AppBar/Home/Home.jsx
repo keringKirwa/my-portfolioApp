@@ -10,11 +10,8 @@ export const Home = () => {
       <div className="row d-flex align-items-center justify-content-center flex-wrap-reverse">
         <div className="col-12 col-sm-12 col-md-12 col-l-7 col-xl-7 d-flex flex-column align-items-center  mt-3 app-home-left position-relative mt-4 pl-5 ">
           <div className="who-am-i text-white d-flex flex-column w-100 jsutify-content-center align-items-center">
-            <span className=" display-5 m-lg-3 text-center text-secondary ">
-              <span className="hello-text"> Hello </span>? Am{' '}
-              <span className="align-items-center display-4 italicText ">
-                Kirwa
-              </span>
+            <span className=" display-5 m-lg-3 text-center ">
+              <span className="hello-text"> Hello </span>? Am Kirwa
             </span>
 
             <h1 className="d-lg-none d-md-none d-sm-flex d-flex text-center ">

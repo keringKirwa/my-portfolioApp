@@ -11,7 +11,7 @@ import { Resume } from './Components/Resume/Resume';
 function App() {
   return (
     <div className="MAIN-DIV-SUPER-CONTAINER">
-      <Toaster position="top-right" reverseOrder={false} />
+      <Toaster reverseOrder={false} />
       <AppBar />
       <Home />
       <AboutMe />
