@@ -29,31 +29,74 @@ export const AppBar = () => {
               </a>
             </li>
             <li
-              class="nav-item  link-item"
-              data-toggle=""
+              class="nav-item text-primary"
+              data-toggle="collapse"
               data-target="#collapsibleNavbar"
             >
               <a class="nav-link text-primary" href="#about-me">
                 AboutMe
               </a>
             </li>
-            <li class="nav-item">
+            <li
+              class="nav-item text-primary"
+              data-toggle="collapse"
+              data-target="#collapsibleNavbar"
+            >
               <a class="nav-link text-primary" href="#">
                 Resume
               </a>
             </li>
-            <li class="nav-item">
+            <li
+              class="nav-item text-primary"
+              data-toggle="collapse"
+              data-target="#collapsibleNavbar"
+            >
               <a class="nav-link text-primary" href="#testimaonials">
                 Testimonials
               </a>
             </li>
-            <li class="nav-item">
+            <li
+              class="nav-item text-primary"
+              data-toggle="collapse"
+              data-target="#collapsibleNavbar"
+            >
               <a class="nav-link text-primary" href="#contact-me">
                 ContactMe
               </a>
             </li>
           </ul>
+
           {/* ----------------------------------------------------------Deal Done ---------------- */}
+          <ul class="justify-content-center d-none  d-xs-none d-sm-none d-md-flex  d-lg-flex">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#home">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#about-me">
+                AboutMe
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="text-primary nav-link text-primary" href="#">
+                Resume
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-primary nav-link text-primary"
+                href="#testimaonials"
+              >
+                Testimonials
+              </a>
+            </li>
+            <li class="nav-item nav-link text-primary">
+              <a class="nav-link text-primary" href="#contact-me">
+                ContactMe
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
