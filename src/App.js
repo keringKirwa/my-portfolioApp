@@ -6,10 +6,11 @@ import { AppBar } from './Components/AppBar/AppBar';
 import { AboutMe } from './Components/AboutMe/AboutMe';
 import { Testimonials } from './Components/Testimonials/Testimonials';
 import { Toaster } from 'react-hot-toast';
+import { Resume } from './Components/Resume/Resume';
 function App() {
   return (
     <div className="MAIN-DIV-SUPER-CONTAINER">
-      <Toaster position="top-center" reverseOrder={false} />
+      <Toaster position="top-right" reverseOrder={false} />
       <AppBar />
       <Home />
       <AboutMe />

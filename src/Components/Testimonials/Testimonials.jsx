@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 import { data } from './data.js';
 import './testimonials.css';
@@ -48,7 +49,9 @@ export const Testimonials = () => {
                 id={data.clientName === 'Mldred Omanga' ? 'last' : ''}
               >
                 <div className="portion1 text-center text-dark">
+                  <FaQuoteLeft className="text-secondary fa-qleft-icon" />
                   {data.message}
+                  <FaQuoteRight className="fa-right-icon text-secondary" />
                 </div>
                 <div className="portion2">⭐⭐⭐⭐⭐</div>
                 <div className="portion3 d-flex">

@@ -77,6 +77,17 @@
   font-family: 'Cormorant', serif;
   height: 100px;
 }
+.react-social-icons {
+  gap: 10px;
+  font-size: 20px;
+}
+.official-handles {
+  padding: 2px;
+  margin: 2px !important;
+}
+.all-rights {
+  font-style: italic;
+}
 
 @media only screen and (max-width: 650px) {
   .controls-container .username-input {
@@ -114,10 +125,20 @@
 
   .fa-copyright-text {
     margin-top: 0 !important;
+    margin-bottom: 0px !important;
     height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border-top: 1px solid rgb(41, 38, 38);
+  }
+  .react-social-icons {
+    gap: 20px;
+    font-size: 30px;
+  }
+  .media-item {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
   }
 }

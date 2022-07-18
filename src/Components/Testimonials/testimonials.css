@@ -63,13 +63,24 @@
   height: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 90% !important;
   padding-top: 10px !important;
   font-family: 'Cormorant', serif;
   font-weight: 400;
   font-size: 20px;
   color: white;
+  position: relative;
+}
+.fa-qleft-icon {
+  font-size: 30px;
+}
+.fa-right-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  color: black;
 }
 .clients-data .portion3 {
   display: flex;

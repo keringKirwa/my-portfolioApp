@@ -1,0 +1,41 @@
+.app-resume-section {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.left-small-container {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  background-color: darkgreen;
+}
+.resume-right-main-container {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.first {
+  height: 1000px;
+  width: 100%;
+  background-color: brown;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.second {
+  height: 500px;
+  width: 100%;
+  border-color: blue;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.third {
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}

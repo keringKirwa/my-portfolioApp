@@ -1,9 +1,11 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
+import { FaTelegramPlane } from 'react-icons/fa';
 
 import './formik.css';
 import { SignUpSchema } from './Yup.js';
 import toast from 'react-hot-toast';
+import { sendEmail } from '../ContactMe/EmailSEnder';
 
 export const UserContactMeForm = () => {
   return (
@@ -16,9 +18,7 @@ export const UserContactMeForm = () => {
         }}
         validationSchema={SignUpSchema}
         onSubmit={(values, { resetForm }) => {
-          console.log(values);
-          toast.success('Success.Thanks For Contacting Kirwa!');
-          resetForm();
+          sendEmail(values, resetForm);
         }}
       >
         {({ errors, touched, dirty, isValid, resetForm }) => (
@@ -35,7 +35,7 @@ export const UserContactMeForm = () => {
               }
             />
             {touched.userName && errors.userName && (
-              <div className="text-danger">{errors.userName}</div>
+              <div className="text-danger ">{errors.userName}</div>
             )}
 
             <Field
@@ -70,6 +70,7 @@ export const UserContactMeForm = () => {
             )}
             <button
               type="submit"
+              id="submit-contact-button"
               className={
                 !(dirty && isValid)
                   ? 'disbaled-button cormorant'
@@ -77,7 +78,8 @@ export const UserContactMeForm = () => {
               }
               disabled={!(dirty && isValid)}
             >
-              SUBMIT ✔️
+              SUBMIT
+              <FaTelegramPlane />
             </button>
           </Form>
         )}

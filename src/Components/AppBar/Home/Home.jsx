@@ -6,10 +6,8 @@ import './home.css';
 
 export const Home = () => {
   return (
-    <div className="container-fluid pt-5 mt-5 w-100 home bg-dark" id="home">
+    <div className="container-fluid pt-5 mt-5  home bg-dark" id="home">
       <div className="row d-flex align-items-center justify-content-center flex-wrap-reverse">
-        {/* -----column------------------ */}
-
         <div className="col-12 col-sm-12 col-md-12 col-l-7 col-xl-7 d-flex flex-column align-items-center  mt-3 app-home-left position-relative mt-4 pl-5 ">
           <div className="who-am-i text-white d-flex flex-column w-100 jsutify-content-center align-items-center">
             <span className=" display-5 m-lg-3 text-center text-secondary ">
@@ -69,8 +67,12 @@ export const Home = () => {
           />
         </div>
       </div>
-      <div className="col col-12 col-sm-12 col-md-12 col-12 d-none d-lg-flex  d-sm-flex app-footer-background ">
-        <img src={image} alt="" className="img-responsive t d-none d-xl-flex" />
+      <div className="col col-12 col-sm-12 col-md-12 col-12 d-none d-lg-flex  d-sm-flex app-footer-background w-100 ">
+        <img
+          src={image}
+          alt=""
+          className=" text-fluid d-none d-xl-flex d-lg-flex w-100"
+        />
       </div>
     </div>
   );

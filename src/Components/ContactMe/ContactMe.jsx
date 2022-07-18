@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './contactme.css';
 import Typical from 'react-typical';
 import { UserContactMeForm } from '../Validation/FormikValidation';
-
+import { FaGithubAlt } from 'react-icons/fa';
+import { BsLinkedin } from 'react-icons/bs';
+import { AiTwotoneMail } from 'react-icons/ai';
+/* Links for the above icons : https://react-icons.github.io/react-icons/search?q=email */
 export const ContactMe = () => {
   return (
     <div className="CON-CON " id="contact-me">
@@ -24,6 +27,20 @@ export const ContactMe = () => {
           </h2>
           <h3 className="cormorant text-info">email: kkirwa230@gmail.com</h3>
           <h3 className="cormorant text-info">📞+254793003495</h3>
+          <p className="official-handles text-info cormorant">
+            Official social-media Hanldes @
+          </p>
+          <div className="react-social-icons text-center w-100  bg-dark m-0 d-flex justify-content-center align-items-center text-info">
+            <a href="https://github.com/keringKirwa/keringKirwa">
+              <FaGithubAlt className="media-item" />
+            </a>
+            <a href="mailto:kkirwa230@gmail.com">
+              <AiTwotoneMail className="media-item" />
+            </a>
+            <a href="https://www.linkedin.com/in/kirwa-kering-0811b7244/">
+              <BsLinkedin className="media-item" />
+            </a>
+          </div>
         </div>
         <div className="col col-12 col-l-7 col-xl-7 d-flex contact-me-form-container">
           <div className="d-flex flex-column controls-container">
@@ -49,8 +66,9 @@ export const ContactMe = () => {
         </div>
       </div>
       {/* ---- */}
-      <p className="text-center w-100 text-info  display-5 cormorant fa-copyright-text bg-dark m-0">
-        Created by Kering~Kirwa. © 2020
+      <p className="text-center w-100 text-info  display-5 cormorant fa-copyright-text bg-dark m-0 d-flex flex-row justify-content-center">
+        Copyrights© 2022,
+        <p className="all-rights">all rights Reserved,By Kirwa Kelvin.</p>
       </p>
     </div>
   );

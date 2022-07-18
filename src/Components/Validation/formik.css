@@ -10,6 +10,13 @@
 
 #success {
   color: green;
+  border: 2px solid green;
+}
+#submit-contact-button {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
 }
 
 .input-error {

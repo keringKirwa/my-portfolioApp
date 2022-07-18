@@ -18,7 +18,7 @@ export const AppBar = () => {
           class="collapse navbar-collapse  p-2 justify-content-end "
           id="collapsibleNavbar"
         >
-          <ul class="navbar-nav justify-content-center">
+          <ul class="navbar-nav justify-content-center d-md-none d-sm-flex d-xs-flex d-lg-none">
             <li
               class="nav-item text-primary"
               data-toggle="collapse"
@@ -53,6 +53,7 @@ export const AppBar = () => {
               </a>
             </li>
           </ul>
+          {/* ----------------------------------------------------------Deal Done ---------------- */}
         </div>
       </nav>
     </div>
