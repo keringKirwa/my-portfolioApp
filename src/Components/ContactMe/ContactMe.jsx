@@ -37,7 +37,7 @@ export const ContactMe = () => {
             <a href="mailto:kkirwa230@gmail.com">
               <AiTwotoneMail className="media-item" />
             </a>
-            <a href="https://www.linkedin.com/in/kirwa-kering/">
+            <a href="https://www.linkedin.com/in/kirwa-kering-0811b7244/">
               <BsLinkedin className="media-item" />
             </a>
           </div>
