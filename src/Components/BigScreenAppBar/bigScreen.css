@@ -1,0 +1,11 @@
+.active {
+  all: initial;
+  color: red !important;
+  border-radius: 3px;
+  border-bottom: 2px solid red;
+  transition: 0.3s ease;
+  box-sizing: content-box;
+}
+ul {
+  list-style-type: none;
+}
