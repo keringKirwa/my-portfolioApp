@@ -70,7 +70,7 @@ export const AppBar = () => {
           </ul>
 
           {/* ----------------------------------------------------------Deal Done ---------------- */}
-          <ul class="justify-content-center d-none  d-xs-none d-sm-none d-md-flex  d-lg-flex main-secondary-ul">
+          <ul class="justify-content-center d-none  d-xs-none d-sm-none d-md-flex  d-lg-flex main-secondary">
             {list.map((listItem) => (
               <ListMapper
                 title={listItem.title}

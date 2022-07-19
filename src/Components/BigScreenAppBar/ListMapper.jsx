@@ -6,7 +6,7 @@ export const ListMapper = ({ title, id, active, setSelected }) => {
   return (
     <>
       <li
-        class={active ? 'nav-item active' : 'nav-item'}
+        class={active ? 'nav-item active text-danger' : 'nav-item text-primary'}
         onClick={() => {
           setSelected(id);
           if (id === 'resume') {
@@ -16,7 +16,7 @@ export const ListMapper = ({ title, id, active, setSelected }) => {
           }
         }}
       >
-        <a class="nav-link text-primary" href={`#${id}`}>
+        <a class="nav-link" href={`#${id}`}>
           {title}
         </a>
       </li>

@@ -9,3 +9,10 @@
 ul {
   list-style-type: none;
 }
+
+.nav-link {
+  border: none !important;
+}
+.active .nav-link {
+  color: red !important;
+}
