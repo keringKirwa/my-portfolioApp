@@ -23,7 +23,7 @@
 }
 .clients-data {
   width: 100% !important;
-  background-color: rgba(241, 165, 24, 0.062);
+  background-color: rgba(240, 245, 250, 0.459);
   min-height: 200px;
   border-radius: 70px 50px 50px 0px;
   margin: 10px !important;
@@ -31,11 +31,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: goldenrod;
 }
 
 .pseudoContainer {
+  all: initial;
   transition: all 0.4s ease-in-out;
+  scroll-behavior: smooth;
 }
 .ceoimage {
   object-fit: cover;
@@ -66,11 +67,10 @@
   align-items: flex-start;
   width: 90% !important;
   padding-top: 10px !important;
-  font-family: 'Cormorant', serif;
-  font-weight: 400;
   font-size: 20px;
   color: white;
   position: relative;
+  font-family: 'Cormorant', serif;
 }
 .fa-qleft-icon {
   font-size: 30px;

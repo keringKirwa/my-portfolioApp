@@ -32,6 +32,12 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,400&family=Poppins:wght@200;500&family=Roboto:wght@100;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,400&family=Lato:wght@300;400&family=Open+Sans:wght@400;500&family=Poppins:wght@200;500&family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
 
     <title>🌲kirwa~Evergreen-production🙅</title>
   </head>
@@ -55,30 +61,27 @@
     ></script>
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
+      (function() {
         'use strict';
         window.addEventListener(
           'load',
-          function () {
+          function() {
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var forms = document.getElementsByClassName('needs-validation');
             // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(
-              forms,
-              function (form) {
-                form.addEventListener(
-                  'submit',
-                  function (event) {
-                    if (form.checkValidity() === false) {
-                      event.preventDefault();
-                      event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-                  },
-                  false
-                );
-              }
-            );
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener(
+                'submit',
+                function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                },
+                false
+              );
+            });
           },
           false
         );

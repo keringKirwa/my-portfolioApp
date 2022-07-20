@@ -46,9 +46,9 @@
   font-size: 35px;
 }
 
-.app-aboutMe-p {
-  font-weight: 400;
-  font-size: 25px;
+.app-aboutMe-p-main {
+  font-size: 25px !important;
+  font-weight: 300;
 }
 .text-info-langugaes {
   color: #ff5823;

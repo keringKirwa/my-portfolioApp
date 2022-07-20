@@ -49,7 +49,7 @@ export const Testimonials = () => {
                 id={data.clientName === 'Mldred Omanga' ? 'last' : ''}
               >
                 <div className="portion1 text-center text-dark">
-                  <FaQuoteLeft className="text-secondary fa-qleft-icon" />
+                  <FaQuoteLeft className="fa-qleft-icon" />
                   {data.message}
                   <FaQuoteRight className="fa-right-icon text-secondary m3 d-sm-none d-none d-lg-block d-md-block d-xl-block" />
                 </div>

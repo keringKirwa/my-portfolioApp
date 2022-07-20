@@ -8,6 +8,7 @@ import { AboutMe } from './Components/AboutMe/AboutMe';
 import { Testimonials } from './Components/Testimonials/Testimonials';
 import { Toaster } from 'react-hot-toast';
 import { Resume } from './Components/Resume/Resume';
+import Button from './Components/Button/Button';
 function App() {
   return (
     <div className="MAIN-DIV-SUPER-CONTAINER">
@@ -15,7 +16,9 @@ function App() {
       <AppBar />
       <Home />
       <AboutMe />
+
       <Testimonials />
+
       <ContactMe />
     </div>
   );

@@ -53,7 +53,7 @@ export const AboutMe = () => {
               Developer,
             </span>
           </h4>
-          <p className="app-aboutMe-p display-4 text-center">
+          <p className="app-aboutMe-p-main display-4 text-center">
             with a solid knowledge in
             <span className="text-info-langugaes">
               {' '}
