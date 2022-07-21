@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import './bigScreen.css';
+import React from 'react';
 
 export const ListMapper = ({ title, id, active, setSelected }) => {
   return (
