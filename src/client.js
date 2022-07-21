@@ -8,7 +8,6 @@ import sanityClient from "@sanity/client";
 export const config = {
   dataset: process.env.REACT_APP_SANITY_DATASET || "production",
   projectId: process.env.REACT_APP_SANITY_PROJECT_ID,
-  token: process.env.REACT_APP_SANITY_TOKEN, //can decide to also use CORS
   apiVersion: "2022-03-25",
 };
 
