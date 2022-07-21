@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import './bigScreen.css';
+import React from 'react';
 
 export const ListMapper = ({ title, id, active, setSelected }) => {
   return (
     <>
       <li
-        class={active ? 'nav-item active text-danger' : 'nav-item text-primary'}
+        className={active ? 'nav-item active text-danger' : 'nav-item text-primary'}
         onClick={() => {
           setSelected(id);
           if (id === 'resume') {
@@ -16,7 +16,7 @@ export const ListMapper = ({ title, id, active, setSelected }) => {
           }
         }}
       >
-        <a class="nav-link" href={`#${id}`}>
+        <a className="nav-link" href={`#${id}`}>
           {title}
         </a>
       </li>

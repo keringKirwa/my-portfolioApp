@@ -42,12 +42,12 @@ export const Home = () => {
 
           <div className="buttons d-flex flex-direction-column align-items-center w-100 ">
             <a href="#contact-me" role="button">
-              <button class="btn btn-hire-me m-1" type="button">
+              <button className="btn btn-hire-me m-1" type="button">
                 Hire Me
               </button>
             </a>
             <a href="#testimaonials" role="button">
-              <button class="btn btn-hire-me m-1" type="button">
+              <button className="btn btn-hire-me m-1" type="button">
                 Get Resume
               </button>
             </a>

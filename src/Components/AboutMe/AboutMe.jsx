@@ -67,12 +67,12 @@ export const AboutMe = () => {
           </p>
           <div className="buttons d-flex flex-direction-column  ">
             <a href="#contact-me">
-              <button class="btn btn-hire-me m-1" type="button">
+              <button className="btn btn-hire-me m-1" type="button">
                 Hire Me
               </button>
             </a>
             <a href="#last">
-              <button class="btn btn-hire-me m-1" type="button">
+              <button className="btn btn-hire-me m-1" type="button">
                 Get Resume
               </button>
             </a>

@@ -1,11 +1,32 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-
-import { data } from './data.js';
+import { urlFor } from '../../sanity';
 import './testimonials.css';
+import client from '../../client';
+
 
 export const Testimonials = () => {
+  const [postData, setPostData] = useState([]);
+
+  useEffect(() => {
+    client.fetch(`*[_type == 'post' && approved == true]{
+      _id,
+      author->{
+      name,
+      image,
+      company,
+      position,
+    },
+    body,
+    approved 
+    
+    }`).then((data) => {
+      setPostData(data);
+    }
+    ).catch(error => console.log(error))
+  }, []);
+
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {
@@ -43,26 +64,28 @@ export const Testimonials = () => {
             className="pseudoContainer d-flex app-scrollable-testimonials-container w-100 "
             ref={scrollRef}
           >
-            {data.map((data) => (
-              <div
+            {postData.map((data) => (
+              <div key={data._id}
                 className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 clients-data text-info "
                 id={data.clientName === 'Mldred Omanga' ? 'last' : ''}
               >
                 <div className="portion1 text-center text-dark">
+
                   <FaQuoteLeft className="fa-qleft-icon" />
-                  {data.message}
+                  {data.body}
+
                   <FaQuoteRight className="fa-right-icon text-secondary m3 d-sm-none d-none d-lg-block d-md-block d-xl-block" />
                 </div>
                 <div className="portion2">⭐⭐⭐⭐⭐</div>
                 <div className="portion3 d-flex">
                   <img
-                    src={data.image}
+                    src={urlFor(data.author.image).url()}
                     alt="client-avatar"
                     className="ceoimage"
                   />
                   <div className="client-name-and-occupation">
-                    <h3 className="cormorant client-name">{data.clientName}</h3>
-                    <h4 className="cormorant">{data.occupation}</h4>
+                    <h3 className="cormorant client-name">{data.author.name}</h3>
+                    <h4 className="cormorant">{data.author.position}- {data.author.company} </h4>
                   </div>
                 </div>
               </div>
