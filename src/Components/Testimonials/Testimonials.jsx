@@ -10,7 +10,7 @@ export const Testimonials = () => {
   const [postData, setPostData] = useState([]);
 
   useEffect(() => {
-    client.fetch(`*[_type == 'post']{
+    client.fetch(`*[_type == 'post' && approved == true]{
       _id,
       author->{
       name,
@@ -18,10 +18,10 @@ export const Testimonials = () => {
       company,
       position,
     },
-    body
+    body,
+    approved 
     
     }`).then((data) => {
-      console.log(data);
       setPostData(data);
     }
     ).catch(error => console.log(error))
@@ -71,7 +71,7 @@ export const Testimonials = () => {
               >
                 <div className="portion1 text-center text-dark">
 
-                  <FaQuoteLeft className="fa-qleft-icon"  />
+                  <FaQuoteLeft className="fa-qleft-icon" />
                   {data.body}
 
                   <FaQuoteRight className="fa-right-icon text-secondary m3 d-sm-none d-none d-lg-block d-md-block d-xl-block" />

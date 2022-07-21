@@ -26,6 +26,12 @@ export default {
       title: "Quote",
       type: "text",
     },
+    {
+      name: "approved",
+      title: "Approved",
+      type: "boolean",
+      description: "Quotes will not be shown in this site without approval",
+    },
   ],
 
   preview: {

@@ -68,7 +68,7 @@ export const ContactMe = () => {
       {/* ---- */}
       <p className="text-center w-100 text-info  display-5 cormorant fa-copyright-text bg-dark m-0 d-flex flex-row justify-content-center">
         Copyrights© 2022,
-        <p className="all-rights">all rights Reserved,By Kirwa Kelvin.</p>
+        <span className="all-rights">all rights Reserved,By Kirwa Kelvin.</span>
       </p>
     </div>
   );
