@@ -9,14 +9,16 @@ export default {
       type: 'string',
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-        maxLength: 96,
-      },
+      name: 'company',
+      title: 'Company',
+      type: 'string',
     },
+    {
+      name: 'position',
+      title: 'Company Position',
+      type: 'string',
+    },
+    
     {
       name: 'image',
       title: 'Image',
@@ -25,19 +27,7 @@ export default {
         hotspot: true,
       },
     },
-    {
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-        },
-      ],
-    },
+    
   ],
   preview: {
     select: {
