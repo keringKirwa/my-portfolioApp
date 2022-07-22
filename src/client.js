@@ -9,7 +9,7 @@ export const config = {
   dataset: process.env.REACT_APP_SANITY_DATASET || "production",
   projectId: process.env.REACT_APP_SANITY_PROJECT_ID,
   apiVersion: "2022-03-25",
-  useCdn:process.env.NODE_ENV==='production' || process.env.NODE_ENV==='development'
+  useCdn:process.env.NODE_ENV==='production' 
 };
 
 // create the client that will be used to connect to the sanity backend and fetch the data
